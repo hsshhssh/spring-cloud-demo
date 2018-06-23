@@ -12,21 +12,69 @@
         </plugin>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/test"
+                        connectionURL="jdbc:mysql://localhost:3306/db_xqhad"
                         userId="root"
                         password="">
         </jdbcConnection>
 
         <javaTypeResolver type="com.hssh.mybatis.MyJavaTypeResolver"></javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.hssh.spring.cloud.persistent.entity.model" targetProject="H:\project\github\spring-cloud-demo\mybatis-generator\src\main\java"/>
+        <javaModelGenerator targetPackage="com.xqh.ad.tkmapper.entity" targetProject="H:\github\spring-cloud-demo\mybatis-generator\src\main\java"/>
 
-        <sqlMapGenerator targetPackage="mybatis"  targetProject="H:\project\github\spring-cloud-demo\mybatis-generator\src\main\resources"/>
+        <sqlMapGenerator targetPackage="mapper"  targetProject="H:\github\spring-cloud-demo\mybatis-generator\src\main\resources"/>
 
-        <javaClientGenerator targetPackage="com.hssh.spring.cloud.persistent.dao" targetProject="H:\project\github\spring-cloud-demo\mybatis-generator\src\main\java" type="XMLMAPPER" />
+        <javaClientGenerator targetPackage="com.xqh.ad.tkmapper.mapper" targetProject="H:\github\spring-cloud-demo\mybatis-generator\src\main\java" type="XMLMAPPER" />
 
-        <table tableName="user" domainObjectName="User">
-            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        <!--<table tableName="pay_platform_wft_info" domainObjectName="PayPWI">-->
+        <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+
+        <!--<table tableName="ad_month_settlement" domainObjectName="AdMonthSettlement">-->
+        <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+
+        <!--<table tableName="ad_ods_idfa_report" domainObjectName="AdOdsIdfaReport">-->
+        <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+
+        <table tableName="ad_click_history" domainObjectName="AdClickHistory">
+        <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
+
+        <table tableName="ad_download_miss_record" domainObjectName="AdDownloadMissRecord">
+        <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <!--<table tableName="pay_platform_jft_info" domainObjectName="PayPJI">-->
+        <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+
+        <!--<table tableName="tww_doll" domainObjectName="TwwDoll">-->
+            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tww_doll_image" domainObjectName="TwwDollImage">-->
+            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tww_order" domainObjectName="TwwOrder">-->
+            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tww_order_pay" domainObjectName="TwwOrderPay">-->
+            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tww_order_support" domainObjectName="TwwOrderSupport">-->
+            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tww_support_comment" domainObjectName="TwwSupportComment">-->
+            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tww_user" domainObjectName="TwwUser">-->
+            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tww_user_address" domainObjectName="TwwUserAddress">-->
+            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="tww_prevent_repeat" domainObjectName="TwwPreventRepeat">-->
+            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
     </context>
 </generatorConfiguration>

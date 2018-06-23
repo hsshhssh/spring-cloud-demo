@@ -10,7 +10,7 @@
 
     <properties>
         <!--  依赖版本  -->
-        <mapper.version>3.3.9</mapper.version>
+        <mapper.version>3.3.3</mapper.version>
         <mysql.version>5.1.21</mysql.version>
         <generator.version>1.3.2</generator.version>
         <lombok.version>1.16.8</lombok.version>
